@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Déchiffrer</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="inc/styleDechiffrer.css" />
+        <script src="inc/dechiffrer.js"></script>
+        <script src="inc/lib.js"></script>
+        <link rel="icon" href="img/fav.ico" />
+    </head>
+
+    <body>
+        <div class="band">
+            <table>
+                <tr>
+                    <td>
+                        <a href="index.html">
+                            <p class="txtband">Accueil</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="chiffrer.html">
+                            <p class="txtband">Chiffrer</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="decrypter.html">
+                            <p class="txtband">Décrypter</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h1> Dechiffrement</h1>
+
+        <div class="corps">
+            <textarea id="key" placeholder="Clé Privée    (syntaxe : n,d)*"></textarea>
+            <table align="center">
+                <tr>
+                    <td class="input">
+                        <textarea id="input" placeholder="Texte Chiffré" autofocus cols="50"></textarea>
+                    </td>
+                    <td class="output">
+                        <textarea id="output" placeholder="Texte Déchiffré" readonly cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <em></em>
+                    </td>
+                </tr>
+            </table>
+            <button id="trigger">Déchiffrer</button>
+            <button id="copy">Copier</button>
+            <p>*"n" correspond au module de chiffrement et "d" à l'exposant de déchiffrement</p>
+        </div>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                    <img id="creativeCommons" alt="Licence Creative Commons" title="Attribution - Pas d’Utilisation Commerciale - Pas de Modification" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/fr/88x31.png" />
+            </a>
+    </body>
+</html>

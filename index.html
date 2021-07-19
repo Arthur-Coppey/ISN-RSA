@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accueil</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="inc/style.css" />
+        <script src="inc/lib.js"></script>
+        <script src="inc/index.js"></script>
+        <link rel="icon" href="img/fav.ico" />
+    </head>
+
+    <body>
+        <div class="band">
+            <table>
+                <tr>
+                    <td>
+                        <a href="chiffrer.html">
+                            <p class="txtband">Chiffrer</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="dechiffrer.html">
+                            <p class="txtband">Déchiffrer</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="decrypter.html">
+                            <p class="txtband">Décrypter</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h1> Bienvenue sur notre site de manipulation du RSA</h1>
+
+        <div class="article">
+            <table>
+                <tr>
+                    <p>Vous trouverez sur ce site plusieurs interfaces permettant de chiffrer, déchiffrer et décrypter le RSA.</p>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="portrait" src="img/arthur.jpg" alt="Arthur Coppey">
+                        <br>
+                        <p class="nom">Arthur</p>
+                        <p class="nom">Coppey</p>
+                    </td>
+                    <td>
+                        <img class="portrait" src="img/chris.jpg" alt="Chris Masclef">
+                        <br>
+                        <p class="nom">Chris</p>
+                        <p class="nom">Masclef</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="article">
+            <h2>Je veux générer une clé !</h2>
+            <br>
+            <button id="keyGen">Générer une clé</button>
+            <table align="center">
+                <tr>
+                    <td>
+                        <textarea id="publicKey" class="key" placeholder="Clé publique" readonly></textarea>
+                    </td>
+                    <td>
+                        <textarea id="privateKey" class="key" placeholder="Clé privée" readonly></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button id="publique" class="copy">Copier la clé publique</button></td>
+                    <td><button id="privée" class="copy">Copier la clé privée</button></td>
+                </tr>
+                <tr>
+                    <td><em></em></td>
+                    <td><em></em></td>
+                </tr>
+            </table>
+        </div>
+        <div class="article">
+            <h2>Je veux cracker une clé !</h2>
+            <br>
+            <button id="keyCrack">Cracker la clé</button>
+            <table align="center">
+                <tr>
+                    <td>
+                        <textarea id="publicKeyCrack" placeholder="Clé à cracker"></textarea>
+                    </td>
+                    <td>
+                        <textarea id="privateKeyCrack" class="key" placeholder="Clé privée" readonly></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="privateKeyCrackCopy">Copier la clé privée</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <em></em>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <img src="img/portrait-4.jpg" alt="Césure 1">
+
+        <a href="chiffrer.html">
+            <div class="article">
+                <h2>Je veux chiffrer !</h2>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Le chiffrement fonctionne la façon suivante : on obtient la valeur unicode de chaque caractère du texte entré, que l'on élève à la puissance "e" (l'exposant de chiffrement) modulo "n" (le module de chiffrement) après formattage du texte.</p>
+                        </td>
+                        <td>
+                            <img class="preview" src="img/chiffrer.png" alt="preview">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+
+        <img src="img/portrait-2.jpg" alt="Césure 2">
+
+        <a href="dechiffrer.html">
+            <div class="article">
+                <h2>Je veux déchiffrer !</h2>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Le déchiffrement fonctionne de façon similaire au chiffrement : on élève les valeurs unicode du texte chiffré à la puissance "d" (l'exposant de déchiffrement) modulo "n" (le module de chiffrement). Les valeurs ainsi obtenues sont les valeurs unicode du texte d'origine.</p>
+                        </td>
+                        <td>
+                            <img class="preview" src="img/dechiffrer.png" alt="preview">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+
+        <img src="img/portrait-1.jpg" alt="Césure 3">
+
+        <a href="decrypter.html">
+            <div class="article">
+                <h2>Je veux décrypter !</h2>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Pour décrypter le RSA, il faut factoriser le module de chiffrement "n" en deux nombres premiers "p" et "q" à partir desquels on peut retrouver la clé privée pour déchiffrer normalement.</p>
+                        </td>
+                        <td>
+                            <img class="preview" src="img/decrypter.png" alt="preview">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </a>
+
+        <img src="img/portrait-3.jpg" alt="Césure 4">
+
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+                        <img id="creativeCommons" alt="Licence Creative Commons" title="Attribution - Pas d’Utilisation Commerciale - Pas de Modification" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/3.0/fr/88x31.png" />
+                </a>
+    </body>
+</html>

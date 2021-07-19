@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "ubuntu";
+    src: url('font/ubuntu.ttf');
+}
+
+body {
+    color: #0B245A;
+    font-family: "ubuntu";
+    text-decoration: none;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+h2 {
+    text-align: center;
+    padding: 2%;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: #0B245A;
+}
+
+.band {
+    background-color: #0B245A;
+    color: white;
+    width: 100%;
+}
+
+.txtband {
+    font-size: 150%;
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    margin: 1em;
+}
+
+.txtband:hover {
+    color: #0B245A;
+    background-color: white; 
+}
+
+.corps {
+    background-color: #d9d9d9;
+    border-style: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    display: block; 
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#creativeCommons {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 7%;
+    padding: 0;
+}
+
+textarea {
+    border-color:#0B245A;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 3px;
+    padding: 1%;
+}
+
+button {
+    color: white;
+    background-color: #0B245A;;
+    padding: 1%;
+    border: 2px solid #0B245A;;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0px 5px 4px 1px grey;
+}
+
+button:active {
+    background-color: #07173a;;
+    border-color: #07173a;;
+    transform: translateY(4px);
+    box-shadow: 0px 2px 4px 1px darkgrey;
+}
